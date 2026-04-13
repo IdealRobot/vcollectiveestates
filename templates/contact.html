@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h1>Contact Us</h1>
+
+<p>Reach out to schedule a consultation.</p>
+
+<form>
+    <p><input type="text" placeholder="Name" style="width:100%; padding:10px;"></p>
+    <p><input type="email" placeholder="Email" style="width:100%; padding:10px;"></p>
+    <p><textarea placeholder="Message" style="width:100%; padding:10px;"></textarea></p>
+    <p><button type="submit" class="cta">Submit</button></p>
+</form>
+{% endblock %}
