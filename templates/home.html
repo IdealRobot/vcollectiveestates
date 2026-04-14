@@ -1,10 +1,37 @@
 {% extends "base.html" %}
 
-{% block title %}Home - V Collective Estates{% endblock %}
+{% block title %}Home | V Collective Estates{% endblock %}
 
 {% block content %}
-<h1>Estate Sales Done Right</h1>
-<p>We help families navigate estate transitions with professionalism, clarity, and care.</p>
 
-<a href="/contact" class="cta">Request a Consultation</a>
+<!-- HERO -->
+<section class="profile">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+
+    <h1>V Collective</h1>
+
+    <p>
+        Curated vintage, antiques, collectibles & quality finds.
+        Thoughtfully sourced. Timeless style.
+    </p>
+
+    <div class="mt-3">
+        <a href="/shop" class="btn btn-primary">Shop Collection</a>
+        <a href="/services" class="btn btn-secondary">Estate Services</a>
+    </div>
+</section>
+
+<!-- LINK BLOCKS (your current vibe) -->
+<section class="mt-4">
+
+    <div class="link-block">
+        <span>eBay — Clothing & Accessories</span>
+    </div>
+
+    <div class="link-block">
+        <span>Etsy — Antiques & Vintage Finds</span>
+    </div>
+
+</section>
+
 {% endblock %}
