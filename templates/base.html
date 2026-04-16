@@ -35,6 +35,13 @@
     {% block content %}{% endblock %}
 </main>
 
+{% if request.path != '/contact' and request.path != '/shop' %}
+<div class="text-center mt-4" style="margin-bottom: 40px;">
+    <h2>Ready to get started?</h2>
+    <a href="/contact" class="btn btn-primary mt-2">Schedule Consultation</a>
+</div>
+{% endif %}
+
 <footer class="footer">
     <div class="footer-inner">
         <div class="footer-brand">
