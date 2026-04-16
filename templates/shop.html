@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<section class="container" style="text-align: center; max-width: 700px;">
+<section class="container" style="text-align: center; max-width: 900px;">
 
     <h1>Shop Our Finds</h1>
 
@@ -13,24 +13,45 @@
     </p>
 
     <!-- SHOP PLATFORMS -->
-    <h2 style="margin-top: 40px;">Shop</h2>
+    <h2 style="margin-top: 50px;">Shop</h2>
 
-    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
-        <a href="https://ebay.us/m/wMXnLL" target="_blank" class="cta">eBay Store</a>
-        <a href="https://thevcollect.etsy.com" target="_blank" class="cta">Etsy Shop</a>
-        <a href="https://poshmark.com/closet/thev_collective?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaARNO0JleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafsRqpCVMp8JjbPmtDRTGYC-lDaJ5SH3YlrcRBAcf8EMTwr0j-sYnN08ftcYA_aem_zThgoZP0hj3GSa6DNSAmPg"
-           target="_blank" class="cta">Poshmark Closet</a>
+    <div class="shop-grid">
+
+        <a href="https://ebay.us/m/wMXnLL" target="_blank" class="shop-card">
+            <img src="{{ url_for('static', filename='img/ebay.svg') }}" alt="eBay">
+            <span>eBay</span>
+        </a>
+
+        <a href="https://thevcollect.etsy.com" target="_blank" class="shop-card">
+            <img src="{{ url_for('static', filename='img/etsy.svg') }}" alt="Etsy">
+            <span>Etsy</span>
+        </a>
+
+        <a href="https://poshmark.com/closet/thev_collective" target="_blank" class="shop-card">
+            <img src="{{ url_for('static', filename='img/poshmark.png') }}" alt="Poshmark">
+            <span>Poshmark</span>
+        </a>
+
     </div>
 
     <!-- SOCIALS -->
-    <h2 style="margin-top: 50px;">Follow</h2>
+    <h2 style="margin-top: 60px;">Follow</h2>
 
-    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
-        <a href="https://www.facebook.com/share/1Do9p11EQH/?mibextid=wwXIfr" target="_blank" class="cta">Facebook</a>
-        <a href="https://www.instagram.com/the_vcollective/" target="_blank" class="cta">Instagram</a>
+    <div class="shop-grid">
+
+        <a href="https://www.facebook.com/share/1Do9p11EQH/?mibextid=wwXIfr" target="_blank" class="shop-card">
+            <img src="{{ url_for('static', filename='img/facebook.svg') }}" alt="Facebook">
+            <span>Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com/the_vcollective/" target="_blank" class="shop-card">
+            <img src="{{ url_for('static', filename='img/instagram.svg') }}" alt="Instagram">
+            <span>Instagram</span>
+        </a>
+
     </div>
 
-    <p style="margin-top: 40px; color: #777;">
+    <p style="margin-top: 50px; color: #777;">
         Inventory changes frequently — follow us to see the latest finds.
     </p>
 
