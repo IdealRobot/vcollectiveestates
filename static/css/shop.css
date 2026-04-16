@@ -29,7 +29,7 @@
 
 .shop-card img {
   height: 40px;          /* hard control */
-  width: auto;
+  width: 40px;
   max-width: 80%;
   object-fit: contain;
   margin-bottom: 6px;
