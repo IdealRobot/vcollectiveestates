@@ -3,7 +3,7 @@
 ========================= */
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
   justify-content: center;
   gap: 12px;
   margin-top: 25px;
@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
 
-  aspect-ratio: 1 / 1;   /* add this */
+  aspect-ratio: 1 / 1;   
 
   padding: 10px;
   border: 1px solid #eee;
