@@ -324,12 +324,11 @@ p {
 .shop-grid {
     display: grid;
 
-    /* Force consistent columns (fixes bottom row stretching) */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    justify-content: center; /* centers rows */
 
-    gap: 14px;
+    gap: 12px; /* tighter spacing */
     margin-top: 25px;
-    justify-items: center; /* centers cards if fewer items */
 }
 
 .shop-card {
@@ -338,22 +337,21 @@ p {
     align-items: center;
     justify-content: center;
 
-    width: 100px;   /* fixed size = all cards identical */
-    height: 100px;  /* square */
+    width: 100px;
+    height: 100px;
 
     padding: 10px;
     border: 1px solid #eee;
     border-radius: 14px;
     text-decoration: none;
 
-    /* Use your site card color */
     background: var(--bg-card);
 
     transition: all 0.2s ease;
 }
 
 .shop-card img {
-    max-height: 76px; /* doubled from ~38px */
+    max-height: 76px;
     max-width: 85%;
     object-fit: contain;
     margin-bottom: 6px;
