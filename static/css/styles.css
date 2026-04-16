@@ -219,56 +219,9 @@ section {
 /* =========================
    CTA BLOCK (BOTTOM CTA)
 ========================= */
-.text-center.mt-4 {
+.cta-block {
   margin-top: 80px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
-/* =========================
-   SHOP PAGE
-========================= */
-.shop-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
-  justify-content: center;
-  gap: 12px;
-  margin-top: 25px;
-}
-
-.shop-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100px;
-  height: 100px;
-
-  padding: 10px;
-  border: 1px solid #eee;
-  border-radius: 14px;
-  text-decoration: none;
-
-  background: var(--bg-card);
-
-  transition: all 0.2s ease;
-}
-
-.shop-card img {
-  max-height: 76px;
-  max-width: 85%;
-  object-fit: contain;
-  margin-bottom: 6px;
-}
-
-.shop-card span {
-  font-size: 12px;
-  letter-spacing: 0.3px;
-  color: #333;
-}
-
-.shop-card:hover {
-  transform: translateY(-3px);
-  border-color: #ddd;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
