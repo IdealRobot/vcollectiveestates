@@ -1,0 +1,52 @@
+/* =========================
+   HOME HERO (PROFILE)
+========================= */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 20px 80px;
+}
+
+/* Logo */
+.profile img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+/* Headline */
+.profile h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+/* Subtext */
+.profile p {
+  max-width: 500px;
+  margin-bottom: 28px;
+}
+
+/* Button spacing */
+.profile .btn {
+  margin: 8px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .profile {
+    padding: 80px 16px 60px;
+  }
+
+  .profile h1 {
+    font-size: 2rem;
+  }
+}
