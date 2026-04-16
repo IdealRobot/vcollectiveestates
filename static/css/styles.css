@@ -323,9 +323,9 @@ p {
 
 .shop-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller base */
+    gap: 16px; /* slightly tighter spacing */
+    margin-top: 25px;
 }
 
 .shop-card {
@@ -334,11 +334,11 @@ p {
     align-items: center;
     justify-content: center;
 
-    aspect-ratio: 1 / 1; /* makes perfect squares */
+    aspect-ratio: 1 / 1;
 
-    padding: 20px;
+    padding: 12px; /* reduced from 20px */
     border: 1px solid #eee;
-    border-radius: 16px;
+    border-radius: 14px;
     text-decoration: none;
 
     background: white;
@@ -347,23 +347,20 @@ p {
 }
 
 .shop-card img {
-    max-height: 50px;
+    max-height: 38px; /* slightly smaller logo */
     max-width: 80%;
     object-fit: contain;
-    margin-bottom: 10px;
-
-    /* REMOVE filter so logos stay full color */
-    filter: none;
+    margin-bottom: 8px;
 }
 
 .shop-card span {
-    font-size: 14px;
-    letter-spacing: 0.5px;
+    font-size: 13px;
+    letter-spacing: 0.4px;
     color: #333;
 }
 
 .shop-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     border-color: #ddd;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
