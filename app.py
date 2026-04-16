@@ -26,6 +26,10 @@ def how_it_works():
 def contact():
     return render_template("contact.html")
 
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
+
 
 # 👇 keep this for local testing
 if __name__ == "__main__":
