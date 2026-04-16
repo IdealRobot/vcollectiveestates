@@ -1,13 +1,12 @@
 /* =========================
    SHOP PAGE
 ========================= */
-
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  max-width: 500px;
-  margin: 25px auto 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+  justify-content: center;
   gap: 12px;
+  margin-top: 25px;
 }
 
 .shop-card {
@@ -16,11 +15,12 @@
   align-items: center;
   justify-content: center;
 
-  aspect-ratio: 1 / 1;
+  width: 100px;
+  height: 100px;
 
   padding: 10px;
-  border: 1px solid var(--border-soft);
-  border-radius: var(--radius-md);
+  border: 1px solid #eee;
+  border-radius: 14px;
   text-decoration: none;
 
   background: var(--bg-card);
@@ -29,8 +29,8 @@
 }
 
 .shop-card img {
-  max-height: 70%;
-  max-width: 80%;
+  max-height: 76px;
+  max-width: 85%;
   object-fit: contain;
   margin-bottom: 6px;
 }
@@ -38,11 +38,11 @@
 .shop-card span {
   font-size: 12px;
   letter-spacing: 0.3px;
-  color: var(--text-primary);
+  color: #333;
 }
 
 .shop-card:hover {
   transform: translateY(-3px);
   border-color: #ddd;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
