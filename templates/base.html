@@ -11,6 +11,9 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Page-specific CSS -->
+    {% block extra_css %}{% endblock %}
 </head>
 
 <body>
