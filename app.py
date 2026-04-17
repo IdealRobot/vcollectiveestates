@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from app.estate.routes import estate
+#from app.estate.routes import estate
 
 app = Flask(__name__)
 
-app.register_blueprint(estate)
+#app.register_blueprint(estate)
 
 @app.route("/")
 def home():
