@@ -1,10 +1,12 @@
 from flask import Blueprint, render_template
+from core.estate.models import Sale
 
 estate = Blueprint('estate', __name__, url_prefix='')
 
 @estate.route('/dashboard')
 def dashboard():
-    return render_template('estate/dashboard.html')
+    sales = Sale.query.all()
+    return render_template('estate/dashboard.html', sales=sales)
 
 @estate.route('/sale/new')
 def sale_new():

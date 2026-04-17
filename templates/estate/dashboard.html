@@ -1,5 +1,10 @@
-{% extends "base.html" %}
+<h1>Estate Sales</h1>
 
-{% block content %}
-<h1>Dashboard</h1>
-{% endblock %}
+<ul>
+    {% for sale in sales %}
+        <li>
+            <strong>{{ sale.name }}</strong><br>
+            {{ sale.address }}
+        </li>
+    {% endfor %}
+</ul>
