@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from app.estate.routes import estate
+from core.estate.routes import estate
 
 app = Flask(__name__)
 
